@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Bond Web Service Demo</title>
+<title>Cocktail Web Service</title>
 <link rel="stylesheet" href="css/bond.css">
 <style>
 body {font-family:georgia;}
@@ -14,10 +14,10 @@ function serverSetup(server,cat){
    if(server == "php"){//use web service
        url = "api.php?cat=" + cat;
    }else{//server is HTML only - simulate web service
-       if(cat == "box"){//box office
-           url = "data/bond-box-office.js";
+       if(cat == "box"){//cocktail alcohol
+           url = "data/cocktail-alcohol.js";
        }else{//year
-           url = "data/bond-year.js"; 
+           url = "data/cocktail-year.js"; 
        }
    }
    return url;
