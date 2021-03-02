@@ -66,35 +66,34 @@ function bondJSON(data){
 	//$("#output").text(JSON.stringify(data)); 
 
     //clear previous title
-    $("#films").html(""); 
+    $("#drink").html(""); 
 
     // write web server title
-    $("#filmtitle").html(data.title);
+    $("#drinkname").html(data.drink);
 
     //
 
-	$.each(data.films,function(i,item){
+	$.each(data.drink,function(i,item){
 		let text = `
-				<b>Title</b>: ${item.Title}<br />
-                <b>Film #</b>: ${item.Film}<br />
+				<b>Name</b>: ${item.Name}<br />
+                <b>Alcohol</b>: ${item.Alcohol}<br />
                 <b>Year</b>: ${item.Year}<br />
-                <b>Bond</b>: ${item.Bond}<br />
-                <b>Box Office</b>: ${item.BoxOffice}<br />
-                <b>Writers</b>: ${item.Writers}<br />
+                <b>Inventor</b>: ${item.Inventor}<br />
+                <b>Ingredient List</b>: ${item.IngredientList}<br />
                 <div class="pic"><img src="thumbnails/${item.Image}" /></div>
 		`;
-		$("<div></div>").html(text).appendTo("#films");
+		$("<div></div>").html(text).appendTo("#drink");
 	});
 }
 
 </script>
 </head>
 	<body>
-	<h1>Bond Web Service</h1>
-		<a href="year" class="category">Bond Films By Year</a><br />
-		<a href="box" class="category">Bond Films By International Box Office Totals</a>
-		<h3 id="filmtitle">Title Will Go Here</h3>
-		<div id="films">
+	<h1>Cocktail Web Service</h1>
+		<a href="year" class="category">Cocktail Drinks By Year</a><br />
+		<a href="alcohol" class="category">Cocktail Drinks By Alcohol</a>
+		<h3 id="drinkname">Title Will Go Here</h3>
+		<div id="drink">
 
 		</div>
 		<div id="output">Results go here</div>

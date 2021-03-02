@@ -1,5 +1,6 @@
 {
 	"title": "Cocktail Sorted By Year",
+    
 	"year":[
               {
 				"Name":"Martini",
@@ -7,7 +8,7 @@
                 "Year":1863,
                 "Inventor":"Jerry Thomas",
                 "IngredientList":"Vermouth",
-                "Image":"martini.jpg",
+                "Image":"martini.jpeg",
 			  },
               {
 				"Name":"Manhattan",
@@ -39,7 +40,7 @@
                 "Year":1922,
                 "Inventor":"Pat MacGarry",
                 "IngredientList":"Vorange Liqueur and Lemon Juice",
-                "Image":"sidecar.jpg",
+                "Image":"sidecar.jpeg",
 			  },
               {
 				"Name":"Moscow Mule",
@@ -55,7 +56,7 @@
                 "Year":1942,
                 "Inventor":"Carlos 'Danny' Herrera",
                 "IngredientList":"Orange Liqueur and Lime Juice",
-                "Image":"margarita.jpg",
+                "Image":"margarita.jpeg",
 			  },
               {
 				"Name":"Irish Coffee",
@@ -80,7 +81,7 @@
                 "Inventor":"Toby Cecchini",
                 "IngredientList":"Triple Sec, Cranberry Juice, and Lime Juice",
                 "Image":"cosmopolitan.jpg",
-			  },
+			  }
             ]
 }
 
