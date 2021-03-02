@@ -1,7 +1,7 @@
 {
 	"title": "Cocktail Sorted by Alcohol",
 	
-	"alcohol":[
+	"cocktails":[
                 {
                     "Name":"Sidecar",
                     "Alcohol":"Cognac",

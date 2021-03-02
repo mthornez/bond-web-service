@@ -69,11 +69,11 @@ function bondJSON(data){
     $("#drink").html(""); 
 
     // write web server title
-    $("#drinkname").html(data.drink);
+    $("#drinkname").html(data.title);
 
     //
 
-	$.each(data.drink,function(i,item){
+	$.each(data.cocktails,function(i,item){
 		let text = `
 				<b>Name</b>: ${item.Name}<br />
                 <b>Alcohol</b>: ${item.Alcohol}<br />
