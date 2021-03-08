@@ -31,4 +31,5 @@ body {font-family:georgia;}
 
 .pic img{
 	max-width: 100px;
+	display: flex; 
 }
