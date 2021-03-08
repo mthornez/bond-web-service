@@ -14,7 +14,7 @@ function serverSetup(server,cat){
    if(server == "php"){//use web service
        url = "api.php?cat=" + cat;
    }else{//server is HTML only - simulate web service
-       if(cat == "box"){//cocktail alcohol
+       if(cat == "alcohol"){//cocktail alcohol
            url = "data/cocktail-alcohol.js";
        }else{//year
            url = "data/cocktail-year.js"; 
@@ -50,7 +50,7 @@ function loadAJAX(cat)
        type:"GET",
        dataType: "json",
        url:url,
-       success:bondJSON,
+       success:toConsole,
 
 
        error: function(xhr, status, error){
@@ -67,7 +67,7 @@ function toConsole(data)
 }
 
 function bondJSON(data){
-//JSON processing data goes here
+    //JSON processing data goes here
 	//toConsole(data);
 	//$("#output").text(JSON.stringify(data)); 
 
